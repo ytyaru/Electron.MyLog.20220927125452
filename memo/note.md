@@ -303,6 +303,9 @@ return await this._lastPager.getPage(keyword)
     - [ ] UIを別クラスに分離する
 - [ ] 取得件数を表示したい
 - [ ] FTS(Full Text Search)を使うべき
+    - [ ] [FTSコンパイルしたsql.jsを作る][]ことができるか確認する
+        - [ ] 日本語用トーカナイザが実装できるか確認する（N-Gram）
+            - [ ] [leiless/sqlite3-ngram][]がビルド・実行できるか確認する
     - [ ] 大文字・小文字を区別せずヒットさせ、一致率に影響させたい
     - [ ] `AND`, `OR`検索したい
         - [ ] キーワードをスペース区切りにしたら各語ごとに`AND`をかけたい（現状はスペースもキーワードの一部になってしまう）
@@ -313,5 +316,9 @@ return await this._lastPager.getPage(keyword)
     - [ ] 検索ボックスにフォーカスする
 - [ ] 出力サイト側でも検索したい
 
-　消化するより増えるほうが速いような……。
+[FTSコンパイルしたsql.jsを作る]:https://blog.ouseful.info/2022/04/06/compiling-full-text-search-fts5-into-sqlite-wasm-build/
+[Sqlite で全文検索]:https://qiita.com/AsladaGSX/items/2bb743d1d8b19cec6cbc
+[leiless/sqlite3-ngram]:https://github.com/leiless/sqlite3-ngram
+
+　消化するより増えるほうが速い……。
 
